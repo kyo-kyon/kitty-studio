@@ -2,8 +2,6 @@ import { useEffect, useMemo, useState } from 'react'
 
 
 import Header from './components/Header'
-import Sparkle from './components/Sparkle'
-import OutlineButton from './components/OutlineButton'
 import Footer from './components/Footer'
 
 //page
@@ -49,7 +47,7 @@ export default function App() {
   return (
     <div className="app-shell">
       <Header path={path} />
-      {page}
+      {page}  
       <Footer />
     </div>
   )
