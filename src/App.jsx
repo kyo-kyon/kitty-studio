@@ -7,6 +7,7 @@ const navItems = [
   { label: 'Contact', to: '/contact' },
 ]
 
+//hi sayangg
 const services = [
   {
     number: '01',
