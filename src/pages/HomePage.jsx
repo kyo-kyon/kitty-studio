@@ -7,6 +7,8 @@ import WorkCard from "../components/WorkCard";
 import services from "../constant/service";
 import workItems from "../constant/workItems";
 
+import KSmascot from "../assets/ks-mascot/kitty mascot.mp4"
+
 const HomePage = () => {
   const reasons = [
     ['Digital Creatives', 'We specialise in creative solutions crafted with care, clarity and a little bit of fun.'],
@@ -20,12 +22,17 @@ const HomePage = () => {
   return (
     <>
       <main>
-        <section className="home-hero content-width">
-          <div className="video-placeholder">
-            <span className="video-corner">INTRODUCING VIDEO</span>
-            <div className="video-copy">KittyCat Mascot<br />#trust</div>
-            <button type="button" aria-label="Play introduction video">▶</button>
-          </div>
+        <section className="home-hero w-full">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            width="100%"
+          >
+            <source src= {KSmascot} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </section>
         <Marquee />
 
