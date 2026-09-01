@@ -1,5 +1,11 @@
 import { useEffect, useMemo, useState } from 'react'
 
+import Cat1 from './assets/logo/kitty cat club identity-05.png'
+import Cat2 from './assets/logo/kitty cat club identity-06.png'
+import Cat3 from './assets/logo/kitty cat club identity-07.png'
+import Cat4 from './assets/logo/kitty cat club identity-08.png'
+import Logo from './assets/logo/profile pic.png'
+
 const navItems = [
   { label: 'About', to: '/about' },
   { label: 'Portfolio', to: '/portfolio' },
@@ -87,13 +93,15 @@ function Header({ path }) {
           <SiteLink to="/about" className={path === '/about' ? 'active' : ''}>About</SiteLink>
           <SiteLink to="/portfolio" className={path === '/portfolio' ? 'active' : ''}>Portfolio</SiteLink>
           <SiteLink to="/" className="logo-link" ariaLabel="KittyCat Studio home">
-            <img src="/assets/kitty-logo.png" alt="KittyCat Studio cat logo" />
+            <img 
+              src={Cat1} alt="KittyCat Studio cat logo" 
+              className=''/>
           </SiteLink>
           <SiteLink to="/services" className={path === '/services' ? 'active' : ''}>Services</SiteLink>
           <SiteLink to="/contact" className={path === '/contact' ? 'active' : ''}>Contact</SiteLink>
         </nav>
         <SiteLink to="/" className="mobile-logo" ariaLabel="KittyCat Studio home">
-          <img src="/assets/kitty-logo.png" alt="KittyCat Studio cat logo" />
+          <img src={Cat1} alt="KittyCat Studio cat logo" />
         </SiteLink>
         <button
           className={`menu-button ${open ? 'is-open' : ''}`}
