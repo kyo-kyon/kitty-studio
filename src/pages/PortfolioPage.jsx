@@ -1,4 +1,9 @@
 import SectionIntro from "../components/SectionIntro";
+import Marquee from "../components/Marquee";
+import CTASection from "../components/CTA";
+import WorkCard from "../components/WorkCard";
+
+import workItems from "../constant/workItems";
 
 const PortfolioPage = () => {
   return (

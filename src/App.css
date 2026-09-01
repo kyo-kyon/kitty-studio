@@ -96,6 +96,8 @@ h2,
   overflow: hidden;
   color: #fff7e5;
   background: var(--pink-500);
+  height: 55px;
+
 }
 
 .marquee > div {

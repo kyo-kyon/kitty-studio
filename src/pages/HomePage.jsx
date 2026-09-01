@@ -9,6 +9,8 @@ import workItems from "../constant/workItems";
 
 import KSmascot from "../assets/ks-mascot/kitty mascot.mp4"
 
+import { PawPrint } from "lucide-react";
+
 const HomePage = () => {
   const reasons = [
     ['Digital Creatives', 'We specialise in creative solutions crafted with care, clarity and a little bit of fun.'],
@@ -38,9 +40,9 @@ const HomePage = () => {
 
         <section className="home-services content-width">
           <div className="home-services-intro">
-            <Sparkle small />
+            <PawPrint className="text-[#ca88a4] -rotate-45"/>
             <h2>What We Do?</h2>
-            <p>Transforming your big ideas into designs that are thoughtful, memorable and ready to grow.</p>
+            <p className="mb-[40px]">Transforming your big ideas into designs that are thoughtful, memorable and ready to grow.</p>
             <OutlineButton to="/services">Discover More</OutlineButton>
           </div>
           <div className="home-services-list">

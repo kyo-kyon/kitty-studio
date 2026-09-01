@@ -2,6 +2,9 @@
 import OutlineButton from "../components/OutlineButton"
 import Marquee from "../components/Marquee"
 import CTASection from "../components/CTA"
+import SectionIntro from "../components/SectionIntro"
+import services from "../constant/service"
+import workItems from "../constant/workItems"
 
 const ServicesPage =() => {
   const packages = [
