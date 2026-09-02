@@ -64,7 +64,7 @@ const HomePage = () => {
           <div className="home-work-intro">
             <Sparkle small />
             <h2>Our Work</h2>
-            <p>A small selection of ideas brought to life for bold, growing brands.</p>
+            <p className="mb-[40px]">A small selection of ideas brought to life for bold, growing brands.</p>
             <OutlineButton to="/portfolio">Explore More</OutlineButton>
           </div>
           <div className="home-work-list">
