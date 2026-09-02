@@ -3,6 +3,8 @@ import services from "../constant/service"
 import { useState } from "react"
 import LocationMap from "../components/LocationMap"
 
+import { PawPrint } from "lucide-react";
+
 const ContactPage =() => {
   const initialForm = { name: '', email: '', company: '', website: '', services: [], package: '', description: '' }
   const [form, setForm] = useState(initialForm)
@@ -35,7 +37,7 @@ const ContactPage =() => {
     <main className="contact-page">
       <section className="contact-layout content-width">
         <div className="contact-form-wrap">
-          <Sparkle />
+          <PawPrint className="text-[#ca88a4] -rotate-45"/>
           <h1>Contact Us</h1>
           <form onSubmit={submitForm}>
             <label>Your Name*<input name="name" value={form.name} onChange={updateField} required /></label>
