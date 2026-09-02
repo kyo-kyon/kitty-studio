@@ -31,7 +31,7 @@ const ServicesPage =() => {
             <div>
               <h2>{service.title}</h2>
               <p>{service.description}</p>
-              <ol>{service.items.map((item) => <li key={item}>{item}</li>)}</ol>
+              <ol className="mb-[40px]">{service.items.map((item) => <li key={item}>{item}</li>)}</ol>
               <OutlineButton to="/contact">Learn More</OutlineButton>
             </div>
           </article>
@@ -43,7 +43,7 @@ const ServicesPage =() => {
           <article key={pack.name}>
             <h2>{pack.name}</h2>
             <p className="package-price">{pack.price}</p>
-            <ul>{pack.perks.map((perk) => <li key={perk}>{perk}</li>)}</ul>
+            <ul className="mb-[40px]">{pack.perks.map((perk) => <li key={perk}>{perk}</li>)}</ul>
             <OutlineButton to="/contact">Choose {pack.name}</OutlineButton>
           </article>
         ))}

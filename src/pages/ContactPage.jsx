@@ -1,6 +1,7 @@
 import Sparkle from "../components/Sparkle"
 import services from "../constant/service"
 import { useState } from "react"
+import LocationMap from "../components/LocationMap"
 
 const ContactPage =() => {
   const initialForm = { name: '', email: '', company: '', website: '', services: [], package: '', description: '' }
@@ -77,9 +78,8 @@ const ContactPage =() => {
           <div className="contact-detail"><span>⌖</span><p>Cyberjaya, Selangor,<br />Malaysia</p></div>
           <div className="contact-detail"><span>✉</span><a href="mailto:TheKittyCatStudio@gmail.com">TheKittyCatStudio@gmail.com</a></div>
           <div className="contact-detail"><span>♡</span><a href="https://instagram.com" target="_blank" rel="noreferrer">Message us on Instagram</a></div>
-          <div className="map-placeholder">
-            <span>KittyCat Studio</span>
-            <p>Cyberjaya, Selangor</p>
+          <div className="">
+            <LocationMap/>
           </div>
         </aside>
       </section>
