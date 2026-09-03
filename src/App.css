@@ -44,7 +44,7 @@ h2,
   text-align: center;
 }
 
-.desktop-nav > a:not(.logo-link) {
+.desktop-nav > a {
   position: relative;
   width: max-content;
   margin: auto;
@@ -54,7 +54,7 @@ h2,
   text-decoration: none;
 }
 
-.desktop-nav > a:not(.logo-link)::after {
+.desktop-nav > a::after {
   position: absolute;
   right: 5px;
   bottom: 3px;
@@ -64,6 +64,7 @@ h2,
   content: '';
   transform: scaleX(0);
   transition: transform 180ms ease;
+
 }
 
 .desktop-nav > a:hover::after,
@@ -243,6 +244,7 @@ h2,
   border-left: 1px solid var(--line);
 }
 
+
 .home-services-list article {
   display: grid;
   grid-template-columns: 54px 1fr;
@@ -250,6 +252,10 @@ h2,
   padding: 27px 36px;
   border-bottom: 1px solid var(--line);
   background: #ebe9e9;
+}
+.home-services-list article:hover{
+  background: url('./assets/images/aupic1.jpg.jpeg');
+  cursor: pointer;
 }
 
 .home-services-list article:nth-child(even) {
@@ -324,14 +330,18 @@ h2,
   transform: rotate(-14deg);
 }
 
-.work-image--peach { background: linear-gradient(135deg, #f3bba7, #e8d2bd); }
+.work-image--peach { background: linear-gradient(135deg, #faa07f, #e5cad5); }
 .work-image--blue { background: linear-gradient(135deg, #9fc9d1, #e4d5dc); }
-.work-image--lilac { background: linear-gradient(135deg, #bea8d1, #ead6df); }
-.work-image--yellow { background: linear-gradient(135deg, #f1d28c, #f9e8bd); }
-.work-image--mint { background: linear-gradient(135deg, #9dcabc, #d9e5d9); }
+.work-image--lilac { background: linear-gradient(135deg, #f3e2b3, #eec8bb); }
+.work-image--yellow { background: linear-gradient(135deg, #bfd5be, #d3ddc7); }
+.work-image--mint { background: linear-gradient(135deg, #b8c5df, #e8e6ed); }
 .work-image--rose { background: linear-gradient(135deg, #d98aa6, #f3c9c8); }
 .work-image--sky { background: linear-gradient(135deg, #9ebbd9, #d3dff1); }
 .work-image--sand { background: linear-gradient(135deg, #bea47f, #e8d9c2); }
+
+.work-image--peach:hover{
+  background: url('./assets/images/aupic1.jpg.jpeg')
+}
 
 .work-mark {
   position: absolute;
@@ -428,7 +438,7 @@ h2,
 }
 
 .why-grid article > span {
-  display: block;
+
   width: 50px;
   height: 50px;
   margin-bottom: 14px;
@@ -591,7 +601,6 @@ h2,
 }
 
 .section-intro h1 {
-  max-width: 850px;
   margin-bottom: 15px;
   color: var(--pink-500);
   font-size: clamp(32px, 5vw, 56px);
@@ -599,10 +608,11 @@ h2,
   font-weight: 700;
   line-height: 1.02;
   text-transform: uppercase;
+  font-size: 31px;
 }
 
 .section-intro > p:last-child {
-  max-width: 1050px;
+
   margin-bottom: 0;
   color: var(--muted);
   font-size: 14px;
@@ -856,9 +866,10 @@ h2,
   height: 40px;
   border-radius: 50%;
   place-items: center;
-  color: var(--ink);
+  color: var(--pink-500);
   background: #dfdcdd;
   font-size: 18px;
+  background-color: var(--pink-500);
 }
 
 .contact-detail p,
