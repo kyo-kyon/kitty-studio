@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import SiteLink from "../SiteLink"
 import Cat1 from "../../assets/logo/kitty01.png"
-import Cat2 from "../../assets/logo/kitty02.png"
+import Cat2 from "../../assets/logo/cat.png"
 import Cat3 from "../../assets/logo/kitty03.png"
 import Logo1 from "../../assets/logo/logoks01.png"
 import Logo2 from "../../assets/logo/logoks02.png"
@@ -18,14 +18,14 @@ const Header = ({ path })  => {
         <nav className={`desktop-nav ${open ? 'is-open' : ''}`} aria-label="Main navigation">
           <SiteLink to="/about" className={path === '/about' ? 'active' : ''}><span className="text-[21px] ">About</span></SiteLink>
           <SiteLink to="/portfolio" className={path === '/portfolio' ? 'active' : ''}><span className="text-[21px] ">Portfolio</span></SiteLink>
-          <SiteLink to="/" className="logo-link" ariaLabel="KittyCat Studio home">
+          <SiteLink to="/" className={path === '/' ? 'active logo-link' : 'logo-link'} ariaLabel="KittyCat Studio home">
             <img src={Cat2} alt="KittyCat Studio cat logo" />
           </SiteLink>
           <SiteLink to="/services" className={path === '/services' ? 'active' : ''}><span className="text-[21px] ">Services</span></SiteLink>
           <SiteLink to="/contact" className={path === '/contact' ? 'active' : ''}><span className="text-[21px] font-[400]">Contact</span></SiteLink>
         </nav>
         <SiteLink to="/" className="mobile-logo" ariaLabel="KittyCat Studio home">
-          <img src={Cat1} alt="KittyCat Studio cat logo" className="w-[30px]"/>
+          <img src={Cat2} alt="KittyCat Studio cat logo" className="w-[30px]"/>
         </SiteLink>
         <button
           className={`menu-button ${open ? 'is-open' : ''}`}

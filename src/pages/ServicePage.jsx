@@ -31,7 +31,7 @@ const ServicesPage =() => {
             <div>
               <h2>{service.title}</h2>
               <p>{service.description}</p>
-              <ol className="mb-[40px]">{service.items.map((item) => <li key={item}>{item}</li>)}</ol>
+              <ol className="mb-[40px] list-disc">{service.items.map((item) => <li key={item}>{item}</li>)}</ol>
               <OutlineButton to="/contact">Learn More</OutlineButton>
             </div>
           </article>

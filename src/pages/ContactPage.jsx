@@ -3,7 +3,7 @@ import services from "../constant/service"
 import { useState } from "react"
 import LocationMap from "../components/LocationMap"
 
-import { PawPrint } from "lucide-react";
+import { Asterisk, Heart, Mail, MapPin, PawPrint } from "lucide-react";
 
 const ContactPage =() => {
   const initialForm = { name: '', email: '', company: '', website: '', services: [], package: '', description: '' }
@@ -77,9 +77,9 @@ const ContactPage =() => {
 
         <aside className="contact-card">
           <h2>Get In Touch</h2>
-          <div className="contact-detail"><span>⌖</span><p>Cyberjaya, Selangor,<br />Malaysia</p></div>
-          <div className="contact-detail"><span>✉</span><a href="mailto:TheKittyCatStudio@gmail.com">TheKittyCatStudio@gmail.com</a></div>
-          <div className="contact-detail"><span>♡</span><a href="https://instagram.com" target="_blank" rel="noreferrer">Message us on Instagram</a></div>
+          <div className="contact-detail"><span><MapPin className="text-white"/></span><p>Cyberjaya, Selangor,<br />Malaysia</p></div>
+          <div className="contact-detail"><span><Mail className="text-white"/></span><a href="mailto:TheKittyCatStudio@gmail.com">TheKittyCatStudio@gmail.com</a></div>
+          <div className="contact-detail"><span><Heart className="text-white"/></span><a href="https://instagram.com" target="_blank" rel="noreferrer">Message us on Instagram</a></div>
           <div className="">
             <LocationMap/>
           </div>
