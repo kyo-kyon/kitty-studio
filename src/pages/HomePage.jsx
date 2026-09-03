@@ -7,18 +7,22 @@ import WorkCard from "../components/WorkCard";
 import services from "../constant/service";
 import workItems from "../constant/workItems";
 
+//icons
+import { BadgeCheck, BriefcaseBusiness, PackageCheck, Palette } from "lucide-react";
+
+//assets
 import KSmascot from "../assets/ks-mascot/kitty mascot.mp4"
 
-import { PawPrint } from "lucide-react";
+import { PawPrint, Clapperboard, UsersRound } from "lucide-react";
 
 const HomePage = () => {
   const reasons = [
-    ['Digital Creatives', 'We specialise in creative solutions crafted with care, clarity and a little bit of fun.'],
-    ['Experienced Team', 'From first sketch to final delivery, our team works closely with you at every step.'],
-    ['Quality Assurance', 'Every detail is reviewed so your finished work feels polished and ready to share.'],
-    ['Industry Experience', 'We turn strategy into visuals that connect with real people and support your goals.'],
-    ['Production Studio', 'All the creative support you need, from branding and content to websites and products.'],
-    ['Package & Retainer', 'Flexible support for one-time launches, growing brands and consistent monthly content.'],
+    ['Digital Creatives', 'We specialise in creative solutions crafted with care, clarity and a little bit of fun.', <Palette className="text-white"/>],
+    ['Experienced Team', 'From first sketch to final delivery, our team works closely with you at every step.', <UsersRound className="text-white"/>],
+    ['Quality Assurance', 'Every detail is reviewed so your finished work feels polished and ready to share.', <BadgeCheck className="text-white"/>],
+    ['Industry Experience', 'We turn strategy into visuals that connect with real people and support your goals.', <BriefcaseBusiness className="text-white"/>],
+    ['Production Studio', 'All the creative support you need, from branding and content to websites and products.', <Clapperboard className="text-white"/>],
+    ['Package & Retainer', 'Flexible support for one-time launches, growing brands and consistent monthly content.', <PackageCheck className="text-white"/>],
   ]
 
   return (
@@ -62,7 +66,7 @@ const HomePage = () => {
 
         <section className="home-work content-width">
           <div className="home-work-intro">
-            <Sparkle small />
+            <PawPrint className="text-[#ca88a4] -rotate-45"/>
             <h2>Our Work</h2>
             <p className="mb-[40px]">A small selection of ideas brought to life for bold, growing brands.</p>
             <OutlineButton to="/portfolio">Explore More</OutlineButton>
@@ -77,11 +81,13 @@ const HomePage = () => {
         </section>
 
         <section className="why-section content-width">
-          <div className="why-title"><Sparkle small /><h2>Why Us?</h2></div>
+          <div className="why-title"><PawPrint className="text-[#ca88a4] -rotate-45"/><h2>Why Us?</h2></div>
           <div className="why-grid">
-            {reasons.map(([title, copy]) => (
+            {reasons.map(([title, copy, icon]) => (
               <article key={title}>
-                <span />
+                <span className="flex justify-center items-center">
+                  {icon}
+                </span>
                 <h3>{title}</h3>
                 <p>{copy}</p>
               </article>

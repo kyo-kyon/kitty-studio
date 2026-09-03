@@ -10,9 +10,9 @@ const PortfolioPage = () => {
     <main>
       <section className="page-heading content-width">
         <SectionIntro
-          eyebrow="Selected projects"
+          eyebrow=""
           title={<>Explore Our Work<br />Where Creativity Meets Purpose</>}
-          body="Discover our portfolio of standout design projects, each crafted to inspire and connect. From bold branding and memorable visual identities to engaging digital and print designs, our work reflects a commitment to creative excellence and results-driven design."
+          body="Discover our portfolio of standout design projects, each crafted to inspire and connect. From bold branding and memorable visual identities to engaging digital and print designs, our work reflects a commitment to creative excellence and results-driven design. Every project tells a story brought to life with precision and purpose. Dive in to see how we transform ideas into impactful, lasting visuals that resonate."
         />
       </section>
       <section className="portfolio-grid content-width">
