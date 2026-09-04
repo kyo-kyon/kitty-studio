@@ -25,8 +25,14 @@ const ServicesPage =() => {
       <section className="capabilities content-width">
         {services.map((service, index) => (
           <article className="capability" key={service.title}>
-            <div className={`capability-image work-image--${workItems[index].style}`}>
-              <span>{service.number}</span>
+            <div 
+              className={`capability-image work-image--${workItems[index].style} bg-contain bg-no-repeat bg-center`}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundImage = `url(${service.images})`;
+                e.currentTarget.style.backgroundSize = `contain`;
+              } }
+              onMouseLeave={(e) => e.currentTarget.style.backgroundImage = ''}>
+              <span >{service.number}</span>
             </div>
             <div>
               <h2>{service.title}</h2>
