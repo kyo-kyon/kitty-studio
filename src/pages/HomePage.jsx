@@ -6,6 +6,7 @@ import WorkCard from "../components/WorkCard";
 
 import services from "../constant/service";
 import workItems from "../constant/workItems";
+import companies from "../constant/companies";
 
 //icons
 import { BadgeCheck, BriefcaseBusiness, PackageCheck, Palette } from "lucide-react";
@@ -77,7 +78,12 @@ const HomePage = () => {
         </section>
 
         <section className="client-strip content-width" aria-label="Selected clients">
-          {['Mallow', 'Neko Co.', 'Lunaria', 'Bloom', 'Sunday'].map((name) => <div key={name}>{name}</div>)}
+          {companies.map((company) => <div key={company.name} className="bg-cover bg-center" style={{
+            backgroundImage: `url(${company.image})`,
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat'
+            }}></div>)}
         </section>
 
         <section className="why-section content-width">

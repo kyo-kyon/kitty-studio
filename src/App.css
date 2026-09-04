@@ -339,8 +339,19 @@ h2,
 .work-image--sky { background: linear-gradient(135deg, #9ebbd9, #d3dff1); }
 .work-image--sand { background: linear-gradient(135deg, #bea47f, #e8d9c2); }
 
-.work-image--peach:hover{
-  background: url('./assets/images/aupic1.jpg.jpeg')
+/* .work-image--peach:hover{
+  background: url('./assets/mockup/asamlaksa.png');
+  background-size: contain;
+} */
+.work-image:hover::after ,
+.capability-image:hover::after,
+.capability-image:hover span {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.work-card:hover .work-mark{
+  opacity: 0;
 }
 
 .work-mark {
