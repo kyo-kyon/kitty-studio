@@ -1,5 +1,5 @@
 import AsamLaksa from '../assets/mockup/asamlaksa.png';
-import AsamLaksa2 from '../assets/mockup/asamLaksa2.png';
+import AsamLaksa2 from '../assets/mockup/asamlaksa2.png';
 import AsamLaksaPoster from  '../assets/mockup/asamlaksaposter.jpeg';
 
 const services = [
