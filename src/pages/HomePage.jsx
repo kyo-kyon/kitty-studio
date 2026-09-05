@@ -3,6 +3,7 @@ import OutlineButton from "../components/OutlineButton";
 import Sparkle from "../components/Sparkle";
 import CTASection from "../components/CTA";
 import WorkCard from "../components/WorkCard";
+import WorkCardHover from "../components/WorkCard/hoverWorkCard";
 
 import services from "../constant/service";
 import workItems from "../constant/workItems";
@@ -73,7 +74,7 @@ const HomePage = () => {
             <OutlineButton to="/portfolio">Explore More</OutlineButton>
           </div>
           <div className="home-work-list">
-            {workItems.slice(0, 3).map((item, index) => <WorkCard key={item.title} item={item} index={index} compact />)}
+            {workItems.slice(0, 3).map((item, index) => <WorkCardHover compact key={item.title} item={item} index={index} />)}
           </div>
         </section>
 

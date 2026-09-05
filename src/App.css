@@ -306,6 +306,7 @@ h2,
   background: #fff;
   box-shadow: 0 7px 17px rgba(64, 45, 52, .14);
   transition: transform 180ms ease, box-shadow 180ms ease;
+
 }
 
 .work-card:hover {
@@ -315,13 +316,13 @@ h2,
 
 .work-image {
   position: relative;
-  height: 260px;
+  height: 281px;
   overflow: hidden;
   background: #ddd;
 }
 
-.work-image::after,
-.capability-image::after {
+
+.compact::after {
   position: absolute;
   inset: 14%;
   border: 1px solid rgba(255,255,255,.6);
@@ -329,6 +330,9 @@ h2,
   content: '';
   transform: rotate(-14deg);
 }
+
+
+
 
 .work-image--peach { background: linear-gradient(135deg, #faa07f, #e5cad5); }
 .work-image--blue { background: linear-gradient(135deg, #9fc9d1, #e4d5dc); }
@@ -343,14 +347,14 @@ h2,
   background: url('./assets/mockup/asamlaksa.png');
   background-size: contain;
 } */
-.work-image:hover::after ,
+.work-image-hover:hover::after ,
 .capability-image:hover::after,
 .capability-image:hover span {
   opacity: 0;
   visibility: hidden;
 }
 
-.work-card:hover .work-mark{
+.work-card-hover:hover .work-mark{
   opacity: 0;
 }
 
@@ -1047,7 +1051,7 @@ h2,
     grid-template-columns: 1fr;
   }
 
-  .work-card--compact .work-image {
+  .work-card--compact .work-image-hover {
     height: 220px;
   }
 
