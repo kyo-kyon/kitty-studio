@@ -5,12 +5,12 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 
 //page
-import HomePage from './pages/HomePage'
-import AboutPage from './pages/AboutPage'
-import ContactPage from './pages/ContactPage'
-import PortfolioPage from './pages/PortfolioPage'
-import ServicesPage from './pages/ServicePage'
-import NotFoundPage from './pages/NotFoundPage'
+import HomePage from './pages/HomePage.jsx'
+import AboutPage from './pages/AboutPage.jsx'
+import ContactPage from './pages/ContactPage.jsx'
+import PortfolioPage from './pages/PortfolioPage.jsx'
+import ServicesPage from './pages/ServicePage.jsx'
+import NotFoundPage from './pages/NotFoundPage.jsx'
 
 
 //hi sayangg
