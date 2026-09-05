@@ -79,7 +79,7 @@ const ContactPage =() => {
           <h2>Get In Touch</h2>
           <div className="contact-detail"><span><MapPin className="text-white"/></span><p>Cyberjaya, Selangor,<br />Malaysia</p></div>
           <div className="contact-detail"><span><Mail className="text-white"/></span><a href="mailto:TheKittyCatStudio@gmail.com">TheKittyCatStudio@gmail.com</a></div>
-          <div className="contact-detail"><span><Heart className="text-white"/></span><a href="https://instagram.com" target="_blank" rel="noreferrer">Message us on Instagram</a></div>
+          <div className="contact-detail"><span><Heart className="text-white"/></span><a href="https://www.instagram.com/thekittycatstudio/" target="_blank" rel="noreferrer">Message us on Instagram</a></div>
           <div className="">
             <LocationMap/>
           </div>
