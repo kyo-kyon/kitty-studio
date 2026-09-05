@@ -540,7 +540,7 @@ h2,
 .about-hero {
   height: min(305px, 32vw);
   min-height: 220px;
-  background: url('/assets/about-hero.jpg') center / cover no-repeat;
+
 }
 
 .about-story {
