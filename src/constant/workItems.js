@@ -1,16 +1,21 @@
-import AsamLaksa from '../assets/mockup/asamlaksa.png';
-import AsamLaksa2 from '../assets/mockup/asamlaksa2.png';
-import AsamLaksaPoster from '../assets/mockup/asamlaksaposter.jpeg';
+import AsamLaksa from '../assets/project/asamlaksa2.png';
+import ACatNamSocMed from '../assets/project/acatnamsocmed.png';
+import Acatnamcoffee from '../assets/project/acatnamcoffee.png';
+import CherryKitty from '../assets/project/cherrykitty.png';
+import KittySole from '../assets/project/kittysole.png';
+import LogoFolio from '../assets/project/logofolio.png';
+import MangaRC from '../assets/project/mangarc2.png';
+import Sweetarelle from '../assets/project/sweetarelle2.png';
 
 const workItems = [
-  { title: 'Mochi House', category: ['Branding', 'Packaging'], style: 'peach', image: AsamLaksa },
-  { title: 'Petal Social', category: ['Social Media', 'Art Direction'], style: 'blue', image: AsamLaksa2 },
-  { title: 'Little Sunday', category: ['Website', 'UI/UX'], style: 'lilac', image: AsamLaksa },
-  { title: 'Neko Notes', category: ['Branding', 'Stationery'], style: 'yellow', image: AsamLaksaPoster },
-  { title: 'Studio Bloom', category: ['Website', 'Development'], style: 'mint', image: '' },
-  { title: 'Cherry Club', category: ['Campaign', 'Social Media'], style: 'rose' , image: ''},
-  { title: 'Happy Goods', category: ['Merchandise', 'Illustration'], style: 'sky', image: '' },
-  { title: 'Tumi Coffee', category: ['Branding', 'Packaging'], style: 'sand', image: '' },
+  { title: 'Asam Laksa - Promotional Poster', category: ['Illustration', 'Poster Design', 'Advertising'], style: 'peach', image: AsamLaksa },
+  { title: 'Cheery Kitty’s Cottage – Adoption Website', category: ['Website Design', 'UI/UX', 'Web Development'], style: 'blue', image: CherryKitty },
+  { title: 'ACatnam Coffee – Brand Identity', category: ['Brand Identity', 'Packaging', 'Print Design'], style: 'lilac', image: Acatnamcoffee },
+  { title: 'MangaRC – Manga Reading App', category: ['Mobile App', 'UI/UX', 'Design Branding'], style: 'yellow', image: MangaRC },
+  { title: 'Sweet Arelle – Merchandise Collection', category: ['Merchandise', 'Brand Application', 'Packaging'], style: 'mint', image: Sweetarelle },
+  { title: 'KittySole – Footwear Shopping App', category: ['Mobile App', 'UI/UX', 'Design E-commerce'], style: 'rose' , image: KittySole},
+  { title: 'Catnam Coffee – Social Media Campaign', category: ['Social Media', 'Content Design', 'Art Direction'], style: 'sky', image: ACatNamSocMed },
+  { title: 'LOGOFOLIO', category: ['Logo Design', 'Brand Identity', 'Illustration'], style: 'sand', image: LogoFolio },
 ]
 
 export default workItems;
