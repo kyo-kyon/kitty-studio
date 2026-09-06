@@ -1,11 +1,11 @@
-import AsamLaksa from '../assets/project/asamlaksa2.png';
+import AsamLaksa from '../assets/project/asamlaksa.png';
 import ACatNamSocMed from '../assets/project/acatnamsocmed.png';
 import Acatnamcoffee from '../assets/project/acatnamcoffee.png';
 import CherryKitty from '../assets/project/cherrykitty.png';
 import KittySole from '../assets/project/kittysole.png';
 import LogoFolio from '../assets/project/logofolio.png';
-import MangaRC from '../assets/project/mangarc2.png';
-import Sweetarelle from '../assets/project/sweetarelle2.png';
+import MangaRC from '../assets/project/mangarc.png';
+import Sweetarelle from '../assets/project/sweetarelle.png';
 
 const workItems = [
   { title: 'Asam Laksa - Promotional Poster', category: ['Illustration', 'Poster Design', 'Advertising'], style: 'peach', image: AsamLaksa },

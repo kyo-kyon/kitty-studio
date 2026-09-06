@@ -19,7 +19,7 @@ const Footer = () => {
         <div>
           <h3>Follow Us</h3>
           <div className="footer-links">
-            <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+            <a href="https://www.instagram.com/thekittycatstudio/" target="_blank" rel="noreferrer">Instagram</a>
             <a href="https://behance.net" target="_blank" rel="noreferrer">Behance</a>
           </div>
         </div>
