@@ -10,7 +10,7 @@ const ServicesPage =() => {
   const packages = [
     { name: 'Student', price: 'From RM 350', perks: ['Logo starter kit', 'Two design concepts', 'One revision round', 'Social profile graphic', 'Final digital files'] },
     { name: 'Pro', price: 'From RM 950', perks: ['Complete visual identity', 'Three design concepts', 'Three revision rounds', 'Social media starter kit', 'Brand guideline sheet'] },
-    { name: 'Premium', price: 'Custom quote', perks: ['Creative direction', 'Full brand system', 'Website design support', 'Campaign-ready assets', 'Priority project support'] },
+    { name: 'Premium', price: 'From RM 1500', perks: ['Creative direction', 'Full brand system', 'Website design support', 'Campaign-ready assets', 'Priority project support'] },
   ]
 
   return (
