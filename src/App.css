@@ -240,9 +240,7 @@ h2,
   line-height: 1.65;
 }
 
-.home-services-list {
-  border-left: 1px solid var(--line);
-}
+
 
 
 .home-services-list article {
@@ -250,17 +248,20 @@ h2,
   grid-template-columns: 54px 1fr;
   min-height: 155px;
   padding: 27px 36px;
-  border-bottom: 1px solid var(--line);
-  background: #ebe9e9;
-}
-.home-services-list article:hover{
-  background: url('./assets/images/aupic1.jpg.jpeg');
-  cursor: pointer;
+  background: #ffffff;
 }
 
-.home-services-list article:nth-child(even) {
-  background: #dddada;
+.home-services-list article:hover {
+  background: #fff7e5;
 }
+/* .home-services-list article:hover{
+  background: url('./assets/images/aupic1.jpg.jpeg');
+  cursor: pointer;
+} */
+
+/* .home-services-list article:nth-child(even) {
+  background: #dddada;
+} */
 
 .home-services-list article > p {
   font-family: Georgia, serif;
